@@ -21,7 +21,7 @@ const Tab2: React.FC = () => {
   useEffect(() => {
     // Fetch data from the API
     axios
-      .get("https://api.openf1.org/v1/drivers?session_key=9646")
+      .get("https://api.openf1.org/v1/drivers?session_key=latest")
       .then((response) => {
         setDrivers(response.data); // Assuming response.data is an array
         setLoading(false);
